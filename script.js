@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Cari elemen canvas
     const canvasElement = document.getElementById('literasiPieChart');
     
-    // Hanya jalankan kode Chart.js JIKA elemen canvas ditemukan (berada di informasi.html)
     if (canvasElement) {
         const ctx = canvasElement.getContext('2d');
         
