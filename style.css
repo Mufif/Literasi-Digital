@@ -1,0 +1,327 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Backgrounds index */
+.bg-page1 {
+    background: url('assets/page1.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.bg-page2 {
+    background: url('assets/page2.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.dark-overlay {
+    background: rgba(0, 0, 0, 0.85); 
+}
+.fixed-overlay {
+    position: fixed; 
+}
+
+/* Navigasi Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.95);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+.logo {
+    height: 40px;
+    background-color: white; 
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f1c40f;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #f1c40f;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #f1c40f;
+    color: #1a1a1a;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #d4ac0d;
+    transform: scale(1.05);
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2; 
+    padding-top: 100px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-section {
+    width: 100%;
+    max-width: 1000px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.info-box, .chart-box {
+    background: rgba(30, 30, 30, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 40px;
+    backdrop-filter: blur(8px); /* Efek kaca kekinian */
+}
+
+.info-box h2, .chart-box h3 {
+    font-size: 2.2rem;
+    color: #f1c40f;
+    margin-bottom: 25px;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #e0e0e0;
+}
+
+/* Chart Container */
+.chart-container {
+    max-width: 500px;
+    margin: 30px auto 0;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.note {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Tentang Kami */
+.about-section h2 {
+    font-size: 2.5rem;
+    color: #f1c40f;
+    margin-bottom: 10px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: rgba(50, 50, 50, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    border-top: 4px solid #f1c40f;
+    transition: transform 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-card h3 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.team-card p {
+    color: #ccc;
+}
+
+/* Customer Service Button */
+.cs-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cs-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cs-section p {
+    margin-bottom: 25px;
+    color: #ccc;
+}
+
+.btn-wa {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+}
+
+.btn-wa:hover {
+    background-color: #1ebe57;
+    transform: translateY(-3px);
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    width: 100%;
+}
+
+/* ===== RESPONSIVE MEDIA QUERIES (Mobile & Tablet) ===== */
+@media screen and (max-width: 768px) {
+    /* Navbar HP */
+    nav {
+        padding: 15px 20px;
+        flex-direction: column; /* Tumpuk menu di bawah logo */
+        gap: 15px;
+    }
+    
+    .nav-brand {
+        font-size: 1.2rem;
+    }
+    
+    .nav-links {
+        gap: 15px;
+        font-size: 0.9rem;
+    }
+
+    /* Ukuran Teks Halaman 1 */
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    /* Padding Halaman 2 menyesuaikan tinggi navbar di HP */
+    .content-wrapper {
+        padding-top: 130px; 
+    }
+
+    .info-box, .chart-box {
+        padding: 25px;
+    }
+
+    .info-box h2, .chart-box h3 {
+        font-size: 1.6rem;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+        text-align: left; /* Lebih rapi di layar kecil */
+    }
+
+    /* Team Card full lebar di HP */
+    .team-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .bg-page1 {
+        overflow-y: auto; /* Izinkan scroll jika layar HP terlalu pendek */
+    }
+}

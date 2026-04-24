@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi - Literasi Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-page2">
+    <div class="overlay dark-overlay fixed-overlay"></div>
+
+    <nav>
+        <div class="nav-brand">
+            <img src="assets/Logo.png" alt="Logo UNTAN" class="logo">
+            <span class="brand-text">Literasi Digital</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Kembali ke Awal</a></li>
+            <li><a href="#penjelasan">Penjelasan</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-wrapper">
+        
+        <section id="penjelasan" class="content-section">
+            <div class="info-box">
+                <h2>Apa Bahayanya Kurang Literasi Digital?</h2>
+                <div class="text-content">
+                    <p>Di era digital saat ini, arus informasi mengalir begitu cepat. Kurangnya literasi digital bukan sekadar ketidakmampuan menggunakan perangkat teknologi, melainkan ketidakmampuan dalam menyaring, mengevaluasi, dan memanfaatkan informasi secara bijak.</p>
+                    <p>Dampak buruk dari hal ini sangat nyata. Masyarakat menjadi sangat mudah termakan <strong>hoaks (berita bohong)</strong> yang dapat memicu perpecahan. Selain itu, banyak yang menjadi korban <strong>penipuan transaksi online (phishing)</strong> karena mudah membagikan kode OTP atau mengklik tautan sembarangan.</p>
+                    <p>Lebih jauh lagi, jejak digital yang tidak dijaga dapat berujung pada <strong>pencurian data pribadi</strong> dan maraknya kasus <strong>cyberbullying</strong> yang merusak mental generasi muda. Oleh karena itu, kecerdasan digital adalah tameng utama kita saat ini.</p>
+                </div>
+            </div>
+
+            <div class="chart-box">
+                <h3>Representasi Dampak Negatif</h3>
+                <p class="desc-text">Berikut adalah gambaran persentase kasus yang sering terjadi di masyarakat akibat minimnya literasi digital:</p>
+                <div class="chart-container">
+                    <canvas id="literasiPieChart"></canvas>
+                </div>
+                <p class="note">*Data di atas diambil dari google form responden.</p>
+            </div>
+        </section>
+
+        <section id="tentang" class="content-section about-section">
+            <h2>Tentang Kami</h2>
+            <p>Website ini dibangun dan dikembangkan oleh tim mahasiswa Universitas Tanjungpura:</p>
+            
+            <div class="team-container">
+                <div class="team-card">
+                    <h3>Muhammad Afif</h3>
+                    <p>NIM: H1051241080</p>
+                </div>
+                <div class="team-card">
+                    <h3>Vicky Kurniadi</h3>
+                    <p>NIM: H1051241056</p>
+                </div>
+                <div class="team-card">
+                    <h3>Ardian Nugroho Pratama</h3>
+                    <p>NIM: H1051241054</p>
+                </div>
+            </div>
+
+            <div class="cs-section">
+                <h2>Layanan Keluhan / Bantuan</h2>
+                <p>Memiliki keluhan atau masukan terkait website? Hubungi Customer Service kami secara langsung.</p>
+                <a href="https://wa.me/6287786718917?text=Halo%20Afif,%20saya%20ingin%20memberikan%20masukan/keluhan%20terkait%20website%20Literasi%20Digital" target="_blank" class="btn-wa">
+                    Chat WhatsApp (Afif)
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Tim Universitas Tanjungpura. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
