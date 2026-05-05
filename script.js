@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ],
             datasets: [{
                 label: 'Persentase Kasus (%)',
-                data: [45, 25, 20, 10], // Data dari Google Form
+                data: [26, 16, 16, 4], // Data dari Google Form
                 backgroundColor: [
                     '#e74c3c', 
                     '#f1c40f', 
