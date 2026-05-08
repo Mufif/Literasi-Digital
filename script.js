@@ -6,19 +6,20 @@ document.addEventListener("DOMContentLoaded", function() {
         
         const chartData = {
             labels: [
-                'Korban Hoaks', 
-                'Penipuan Transaksi Online', 
-                'Pencurian Data Pribadi', 
+                'Penyebaran Hoaks', 
+                'Penipuan Online', 
+                'Tautan Phishing', 
                 'Cyberbullying'
             ],
             datasets: [{
                 label: 'Persentase Kasus (%)',
-                data: [26, 16, 16, 4], // Data dari Google Form
+                // UPDATE: Data disesuaikan dengan hasil form (total 100%)
+                data: [40.6, 25, 21.9, 12.5], 
                 backgroundColor: [
-                    '#e74c3c', 
-                    '#f1c40f', 
-                    '#3498db', 
-                    '#9b59b6'  
+                    '#e74c3c', // Merah untuk Hoaks
+                    '#f1c40f', // Kuning untuk Penipuan
+                    '#e67e22', // Oranye untuk Phishing
+                    '#3498db'  // Biru untuk Cyberbullying
                 ],
                 borderColor: 'transparent',
                 borderWidth: 2
